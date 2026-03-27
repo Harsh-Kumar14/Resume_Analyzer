@@ -47,18 +47,13 @@ const Home = () => {
 
     return (
         <div className='home-page'>
-
-            {/* Page Header */}
             <header className='page-header'>
                 <h1>Create Your Custom <span className='highlight'>Interview Plan</span></h1>
                 <p>Let our AI analyze the job requirements and your unique profile to build a winning strategy.</p>
             </header>
 
-            {/* Main Card */}
             <div className='interview-card'>
                 <div className='interview-card__body'>
-
-                    {/* Left Panel - Job Description */}
                     <div className='panel panel--left'>
                         <div className='panel__header'>
                             <span className='panel__icon'>
@@ -75,11 +70,7 @@ const Home = () => {
                         />
                         <div className='char-counter'>0 / 5000 chars</div>
                     </div>
-
-                    {/* Vertical Divider */}
                     <div className='panel-divider' />
-
-                    {/* Right Panel - Profile */}
                     <div className='panel panel--right'>
                         <div className='panel__header'>
                             <span className='panel__icon'>
@@ -87,8 +78,6 @@ const Home = () => {
                             </span>
                             <h2>Your Profile</h2>
                         </div>
-
-                        {/* Upload Resume */}
                         <div className='upload-section'>
                             <label className='section-label'>
                                 Upload Resume
@@ -126,11 +115,7 @@ const Home = () => {
                                 </label>
                             )}
                         </div>
-
-                        {/* OR Divider */}
                         <div className='or-divider'><span>OR</span></div>
-
-                        {/* Quick Self-Description */}
                         <div className='self-description'>
                             <label className='section-label' htmlFor='selfDescription'>Quick Self-Description</label>
                             <textarea
@@ -141,8 +126,6 @@ const Home = () => {
                                 placeholder="Briefly describe your experience, key skills, and years of experience if you don't have a resume handy..."
                             />
                         </div>
-
-                        {/* Info Box */}
                         <div className='info-box'>
                             <span className='info-box__icon'>
                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="12" r="10" /><line x1="12" y1="8" x2="12" y2="12" stroke="#1a1f27" strokeWidth="2" /><line x1="12" y1="16" x2="12.01" y2="16" stroke="#1a1f27" strokeWidth="2" /></svg>
@@ -151,8 +134,6 @@ const Home = () => {
                         </div>
                     </div>
                 </div>
-
-                {/* Card Footer */}
                 <div className='interview-card__footer'>
                     <span className='footer-info'>AI-Powered Strategy Generation &bull; Approx 30s</span>
                     <button
@@ -163,8 +144,6 @@ const Home = () => {
                     </button>
                 </div>
             </div>
-
-            {/* Recent Reports List */}
             {reports.length > 0 && (
                 <section className='recent-reports'>
                     <h2>My Recent Interview Plans</h2>
@@ -179,8 +158,6 @@ const Home = () => {
                     </ul>
                 </section>
             )}
-
-            {/* Page Footer */}
             <footer className='page-footer'>
                 <a href='#'>Privacy Policy</a>
                 <a href='#'>Terms of Service</a>
